@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PartyRent</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ 
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+
+<div class="sidebar" id="sidebar">
+
+    <div class="logo-section">
+
+        <h2>Aura Nights</h2>
+
+        <i class="fa fa-xmark"
+        id="closeBtn"></i>
+
+    </div>
+
+    <a href="#home"><i class="fa fa-home"></i> Home</a>
+
+    <a href="#services" class="sidebar-link"><i class="fa fa-bell-concierge"></i> Services</a>
+
+    <a href="#"><i class="fa fa-box"></i> Products</a>
+
+    <a href="#"><i class="fa fa-cart-shopping"></i> Orders</a>
+
+    <a href="#"><i class="fa fa-star"></i> Reviews</a> 
+
+</div>
+
+
+
+<div class="main-content">
+
+<header>
+
+    <div class="left-header">
+
+        <i class="fa fa-bars"
+        id="menuBtn"></i>
+
+        <h2 class="header-logo">
+            Aura Nights
+        </h2>
+
+    </div>
+
+    
+
+    <div class="search-box">
+
+        <input type="text"
+        id="searchInput"
+        placeholder="Search Villa...">
+
+        <button id="searchBtn">
+            <i class="fa fa-search"></i>
+        </button>
+
+    </div>
+
+    
+
+    <div class="header-buttons">
+
+        <button class="signup-btn"
+        onclick="openSignup()">
+            Signup
+        </button>
+
+        <button class="login-btn"
+        onclick="openLogin()">
+            Login
+        </button>
+
+       <button class="profile-btn"
+onclick="openProfile()">
+
+    <i class="fa fa-user"></i>
+
+</button>
+    </div>
+
+</header>
+
+
+
+<section class="hero">
+
+    <div class="overlay">
+
+        <h1>Luxury / Premium Vibe Party </h1>
+
+        <p>Book Beautiful Villas & Party Houses</p>
+
+        <button id="exploreBtn">
+            Explore Now
+        </button>
+
+    </div>
+
+</section>
+<section class="services" id="services">
+
+    <h2>Our Premium Services</h2>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <i class="fa fa-snowflake"></i>
+            <h3>AC Luxury Rooms</h3>
+            <p>Fully air-conditioned premium villas for comfort stay.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa fa-broom"></i>
+            <h3>Clean & Hygienic</h3>
+            <p>Daily cleaning and sanitized rooms for safe experience.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa fa-user-tie"></i>
+            <h3>Better Staff</h3>
+            <p>Professional staff available 24/7 for your help.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa fa-utensils"></i>
+            <h3>Food Service</h3>
+            <p>Delicious food and catering available on demand.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa fa-music"></i>
+            <h3>Party Setup</h3>
+            <p>Full decoration and DJ setup for your events.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa fa-shield"></i>
+            <h3>Security</h3>
+            <p>24/7 security and safe environment for guests.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="products">
+
+    <h2>Popular Party Villas</h2>
+
+    <div class="product-grid"
+    id="productGrid">
+
+    </div>
+
+</section>
+
+</div>
+
+
+
+<div class="popup" id="signupPopup">
+
+    <div class="form-box">
+
+        <span class="close"
+        onclick="closeSignup()">
+            &times;
+        </span>
+
+        <h2>Create Account</h2>
+
+        <input type="text"
+        id="signupName"
+        placeholder="Enter Name">
+
+        <input type="email"
+        id="signupEmail"
+        placeholder="Enter Email">
+
+        <input type="number"
+        id="signupMobile"
+        placeholder="Enter Mobile Number">
+
+        <input type="password"
+        id="signupPassword"
+        placeholder="Enter Password">
+
+        <input type="password"
+        id="confirmPassword"
+        placeholder="Confirm Password">
+
+        <input type="file"
+        id="signupImage">
+
+        <textarea
+        id="signupAddress"
+        placeholder="Enter Address"></textarea>
+
+        <button onclick="signupUser()">
+            Signup
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<div class="popup" id="loginPopup">
+
+    <div class="form-box">
+
+        <span class="close"
+        onclick="closeLogin()">
+            &times;
+        </span>
+
+        <h2>Login Account</h2>
+
+        <input type="email"
+        id="loginEmail"
+        placeholder="Enter Email">
+
+        <input type="password"
+        id="loginPassword"
+        placeholder="Enter Password">
+
+        <button onclick="loginUser()">
+            Login
+        </button>
+
+    </div>
+
+</div>
+
+
+<div class="popup" id="profilePopup">
+
+    <div class="profile-box">
+
+        <span class="close"
+        onclick="closeProfile()">
+            &times;
+        </span>
+
+        <div class="profile-top">
+
+            <div class="profile-image">
+
+                <i class="fa fa-user"></i>
+
+            </div>
+
+            <h2 id="profileName"></h2>
+
+            <p class="profile-text">
+                Premium Member
+            </p>
+
+        </div>
+
+        <div class="profile-details"
+        id="profileData">
+
+        </div>
+
+        <button class="logout-btn"
+        onclick="logoutUser()">
+
+            <i class="fa fa-right-from-bracket"></i>
+
+            Logout
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js">
+
+
+
+</script>
+
+</body>
+</html>

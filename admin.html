@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PartyRent Admin Dashboard</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <div class="admin-login" id="adminLogin">
+      <div class="login-box">
+        <h2>Admin Login</h2>
+
+        <input type="email" id="adminEmail" placeholder="Enter Admin Email" />
+
+        <input
+          type="password"
+          id="adminPassword"
+          placeholder="Enter Password"
+        />
+
+        <button onclick="adminLogin()">Login</button>
+      </div>
+    </div>
+
+    <div class="dashboard" id="dashboard">
+      <div class="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">
+          <i class="fa fa-xmark"></i>
+        </div>
+
+        <h2>PartyRent</h2>
+
+        <a href="#" onclick="showSection('dashboard')">
+          <i class="fa fa-chart-line"></i>
+          Dashboard
+        </a>
+
+        <a href="#" onclick="showSection('users')">
+          <i class="fa fa-users"></i>
+          Users
+        </a>
+
+        <a href="#" onclick="showSection('villas')">
+          <i class="fa fa-house"></i>
+          Villas
+        </a>
+        <a href="#">
+          <i class="fa fa-cart-shopping"></i>
+          Orders
+        </a>
+        <a href="#">
+          <i class="fa fa-star"></i>
+          Reviews
+        </a> 
+
+        <button class="logout-btn" onclick="logoutAdmin()">Logout</button>
+      </div>
+
+      <div class="main">
+        <button class="menu-btn" onclick="toggleSidebar()">
+          <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card-icon purple">
+              <i class="fa fa-users"></i>
+            </div>
+
+            <div>
+              <h2 id="usersCount">0</h2>
+
+              <p>Total Users</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon blue">
+              <i class="fa fa-house"></i>
+            </div>
+
+            <div>
+              <h2>8</h2>
+
+              <p>Total Villas</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon green">
+              <i class="fa fa-cart-shopping"></i>
+            </div>
+
+            <div>
+              <h2 id="ordersCount">0</h2>
+
+              <p>Total Orders</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon orange">
+              <i class="fa fa-star"></i>
+            </div>
+
+            <div>
+              <h2>120</h2>
+
+              <p>Total Reviews</p>
+            </div>
+          </div>
+        </div>
+        <div class="graph-controls">
+          <button onclick="updateChart('orders')">Orders</button>
+          <button onclick="updateChart('users')">Users</button>
+          <button onclick="updateChart('revenue')">Revenue</button>
+        </div>
+
+        <div class="graphs">
+          <div class="graph-box">
+            <h3>Monthly Orders</h3>
+
+            <canvas id="barChart"></canvas>
+          </div>
+
+          <div class="graph-box">
+            <h3>Villa Categories</h3>
+
+            <canvas id="pieChart"></canvas>
+          </div>
+
+          <div class="graph-box">
+            <h3>User Growth</h3>
+
+            <canvas id="lineChart"></canvas>
+          </div>
+
+          <div class="graph-box">
+            <h3>Revenue Sources</h3>
+
+            <canvas id="doughnutChart"></canvas>
+          </div>
+        </div>
+
+        <div class="booking-table">
+          <h2>Recent Bookings</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>User</th>
+
+                <th>Email</th>
+
+                <th>Villa</th>
+
+                <th>Price</th>
+
+                <th>Date</th>
+              </tr>
+            </thead>
+
+            <tbody id="bookingData"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="villa-section" id="villaSection">
+        <div class="villa-top">
+          <h2>Manage Villas</h2>
+        </div>
+
+        <!-- ADD VILLA FORM -->
+        <div class="villa-form">
+          <input type="text" id="villaName" placeholder="Villa Name" />
+          <input type="text" id="villaPrice" placeholder="Villa Price" />
+          <input type="text" id="villaRating" placeholder="Villa Rating" />
+          <input type="text" id="villaReviews" placeholder="Villa Reviews" />
+          <input type="text" id="villaImage" placeholder="Villa Image URL" />
+
+          <button onclick="addVilla()">Add Villa</button>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Rating</th>
+              <th>Reviews</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody id="villaData"></tbody>
+        </table>
+      </div>
+
+      <div class="users-table" id="usersSection">
+        <h2>All Registered Users</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+
+              <th>Name</th>
+
+              <th>Email</th>
+
+              <th>Mobile</th>
+
+              <th>Address</th>
+            </tr>
+          </thead>
+
+          <tbody id="usersData"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+{
+  "users": [
+    {
+      "name": "priyanshu",
+      "email": "pv@",
+      "mobile": "1234567890",
+      "password": "1234",
+      "address": "asdfghjkl",
+      "image": "",
+      "id": "9jFniaEfrGw"
+    },
+    {
+      "name": "priyanshu",
+      "email": "pv@12234",
+      "mobile": "1234567890",
+      "password": "1234",
+      "address": "asdfghjk",
+      "image": "",
+      "id": "vg2MTBeCLi8"
+    },
+    {
+      "name": "somya",
+      "email": "somya12@22",
+      "mobile": "1234567890",
+      "password": "1234",
+      "address": "asdfghj",
+      "image": "",
+      "id": "uPXqxuVwK0U"
+    }
+  ],
+  "bookings": [
+    {
+      "userName": "priyanshu",
+      "userEmail": "pv@",
+      "villaName": "Ocean Breeze Villa",
+      "villaPrice": "₹18,000/night",
+      "bookingDate": "5/16/2026",
+      "id": "c_-D6e5lWe8"
+    },
+    {
+      "userName": "priyanshu",
+      "userEmail": "pv@",
+      "villaName": "Night Party House",
+      "villaPrice": "₹22,000/night",
+      "bookingDate": "5/16/2026",
+      "id": "LP0TtvpgfZ4"
+    },
+    {
+      "userName": "priyanshu",
+      "userEmail": "pv@",
+      "villaName": "Night Club Villa",
+      "villaPrice": "₹24,500/night",
+      "bookingDate": "5/16/2026",
+      "id": "lkjidr8oAt4"
+    },
+    {
+      "userName": "somya",
+      "userEmail": "somya12@22",
+      "villaName": "Skyline Luxury Villa",
+      "villaPrice": "₹20,000/night",
+      "bookingDate": "5/16/2026",
+      "id": "nAcxGPUA6kI"
+    },
+    {
+      "userName": "somya",
+      "userEmail": "somya12@22",
+      "villaName": "Night Club Villa",
+      "villaPrice": "₹24,500/night",
+      "bookingDate": "5/16/2026",
+      "id": "GD1fIoKclIQ"
+    },
+    {
+      "userName": "somya",
+      "userEmail": "somya12@22",
+      "villaName": "Night Club Villa",
+      "villaPrice": "₹24,500/night",
+      "bookingDate": "5/16/2026",
+      "id": "Qjw_abLigQA"
+    },
+    {
+      "userName": "somya",
+      "userEmail": "somya12@22",
+      "villaName": "Luxury Pool Villa",
+      "villaPrice": "₹15,500/night",
+      "bookingDate": "5/16/2026",
+      "id": "FwGgryi80V8"
+    },
+    {
+      "userName": "somya",
+      "userEmail": "somya12@22",
+      "villaName": "Ocean Breeze Villa",
+      "villaPrice": "₹18,000/night",
+      "bookingDate": "5/18/2026",
+      "id": "Ps6erEHXoUw"
+    }
+  ],
+  "villas": [
+    {
+      "name": "Ocean Breeze Villa",
+      "price": "₹18,000/night",
+      "rating": "4.8 ⭐",
+      "reviews": "250 Reviews",
+      "image": "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=1200&auto=format&fit=crop",
+      "id": "SF1RptyLKsw"
+    },
+    {
+      "name": "Luxury Pool Villa",
+      "price": "₹15,500/night",
+      "rating": "4.7 ⭐",
+      "reviews": "210 Reviews",
+      "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop",
+      "id": "biS9ORk_FrM"
+    },
+    {
+      "name": "Night Party House",
+      "price": "₹22,000/night",
+      "rating": "5.0 ⭐",
+      "reviews": "450 Reviews",
+      "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop",
+      "id": "p8ecyqXmmUs"
+    },
+    {
+      "name": "Skyline Luxury Villa",
+      "price": "₹20,000/night",
+      "rating": "4.9 ⭐",
+      "reviews": "410 Reviews",
+      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
+      "id": "epvh2uDVFnI"
+    },
+    {
+      "name": "Palm Beach House",
+      "price": "₹16,500/night",
+      "rating": "4.8 ⭐",
+      "reviews": "290 Reviews",
+      "image": "https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=1200&auto=format&fit=crop",
+      "id": "0RexXlJX0Js"
+    },
+    {
+      "name": "Moonlight Party Villa",
+      "price": "₹25,000/night",
+      "rating": "5.0 ⭐",
+      "reviews": "510 Reviews",
+      "image": "https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1200&auto=format&fit=crop",
+      "id": "Qrsq-CTl6d4"
+    },
+    {
+      "name": "Royal Garden Villa",
+      "price": "₹18,500/night",
+      "rating": "4.7 ⭐",
+      "reviews": "340 Reviews",
+      "image": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=1200&auto=format&fit=crop",
+      "id": "PYYzn_xZYz8"
+    },
+    {
+      "name": "Sunset Pool House",
+      "price": "₹21,000/night",
+      "rating": "4.9 ⭐",
+      "reviews": "470 Reviews",
+      "image": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=1200&auto=format&fit=crop",
+      "id": "RsNqsy7J4_w"
+    },
+    {
+      "name": "Golden Palace Villa",
+      "price": "₹30,000/night",
+      "rating": "5.0 ⭐",
+      "reviews": "620 Reviews",
+      "image": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1200&auto=format&fit=crop",
+      "id": "1GTxJJTzPYE"
+    },
+    {
+      "name": "Night Club Villa",
+      "price": "₹24,500/night",
+      "rating": "4.8 ⭐",
+      "reviews": "390 Reviews",
+      "image": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop",
+      "id": "xgs4ShQEF2o"
+    },
+    {
+      "name": "Elite Party Mansion",
+      "price": "₹27,000/night",
+      "rating": "5.0",
+      "reviews": "580 Reviews",
+      "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop",
+      "id": "2zPSKaImApA"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
